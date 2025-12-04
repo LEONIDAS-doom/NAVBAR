@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <title>bilangan</title>
+    </head>
+    <body>
+        <h1 align="center">KODE PEGAWAI</h1>
+         
+        <script>
+          let kode =parseInt(prompt("masukan kode pegawai!"))
+          const g =Math.floor(kode / 10000000000);
+          const dd =Math.floor((kode / 100000000)%100);
+          const mm =Math.floor((kode / 1000000)%100);
+          const yyyy =Math.floor((kode / 100)%10000);
+          const nn =Math.floor(kode % 100);
+
+          document.write("golongan :" + g  + "<br>");
+          
+          document.write("lahir pada :" + dd );
+          switch(mm){
+            case 1 :
+                document.write("january");
+                break
+            case 2 :
+                document.write("february");
+                break
+            case 3 : 
+                document.write("maret");
+                break
+            case 4 : 
+                document.write("april");
+                break
+            case 5 :
+                document.write("mei");
+                break
+            case 6 : 
+                document.write("juni");
+                break
+            case 7 : 
+                document.write("juli");
+                break
+            case 8 :
+                document.write("agustus");
+                break
+            case 9 : 
+                document.write("september");
+                break
+            case 10 : 
+                document.write("oktober");
+                break
+            case 11 : 
+                document.write("november");
+                break
+            case 12 :
+                document.write("desember");
+                break
+            
+                default :
+                alert("Data tidak teridentifikasi!")
+
+          }
+ 
+          document.write("<br>")
+          document.write("tahun :" + yyyy + "<br>");
+          document.write("urutan ke :" + nn + "<br>");
+
+
+        </script>
+    </body>
+ </html>

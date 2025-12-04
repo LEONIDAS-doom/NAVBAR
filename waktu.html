@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>waktu berjalan</title>
+    </head>
+<body>
+ <h1 align="center">waktu berjalan</h1>
+<script>
+   
+    let waktu = prompt("Masukkan waktu (hh:mm:ss)");
+
+    let pisah = waktu.split(":");
+    if (pisah.length !== 3) {
+        alert("Format harus hh:mm:ss");
+    } else {
+      
+        let hh = parseInt(pisah[0]);
+        let mm = parseInt(pisah[1]);
+        let ss = parseInt(pisah[2]);
+
+        
+        if (hh < 0 || hh > 23 || mm < 0 || mm > 59 || ss < 0 || ss > 59) {
+            alert("Rentang waktu tidak valid!");
+        } else {
+         
+            ss = ss + 1;
+
+            if (ss === 60) {
+                ss = 0;
+                mm = mm + 1;
+            }
+
+            if (mm === 60) {
+                mm = 0;
+                hh = hh + 1;
+            }
+
+            if (hh === 24) {
+                hh = 0;
+            }
+
+            
+            function dua(x) {
+                return (x < 10 ? "0" : "") + x;
+            }
+
+     
+            document.write("Waktu setelah ditambah 1 detik adalah: " 
+                + dua(hh) + ":" + dua(mm) + ":" + dua(ss));
+        }
+    }
+    
+</script>
+
+</body>
+</html>

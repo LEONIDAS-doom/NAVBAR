@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>rata rata</title>
+    </head>
+<body>
+ <h1 align="center">Grade rata rata</h1>
+<script>
+
+        let pabp = parseFloat(prompt("masukan nilai PABP:"));
+        let mtk = parseFloat(prompt("masukan nilai mtk:"));
+        let dpk = parseFloat(prompt("masukan nilai dpk:"));
+
+        let rata = (pabp + mtk + dpk) / 3;
+
+        let grade;
+
+        if (rata >= 80 && rata <= 100) {
+            grade = "A";
+        } else if (rata >= 75 && rata < 80) {
+            grade = "B";
+        } else if (rata >= 65 && rata < 75) {
+            grade = "C";
+        } else if (rata >= 45 && rata < 65) {
+            grade = "D";
+        } else if (rata >= 0 && rata < 45) {
+            grade = "E";
+        } else {
+            grade = "K";
+        }
+
+       document.write("Rata-rata: " + rata.toFixed(2) + "<br>");
+        document.write("Grade: " + grade);
+
+</script>
+
+</body>
+</html>
