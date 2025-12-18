@@ -1,0 +1,142 @@
+<html>
+<head>
+<title> Buku kunjungan </title>
+<style>
+	.card {
+		width:150px;
+		border: 1px solid red;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+		background-color: white;
+		overflow: hidden;
+		margin: 5px;
+		text-align: center;
+		border-radius: 5%;
+	}
+	
+	.card-img{
+		width:100px;
+		height:100px;
+		object-fit: cover;
+		border-radius:50%;
+	
+	}
+	
+	.card-tittle{
+		font-size:18px;
+		color:black;
+	}
+	
+	.card-subtittle{
+		font-size:10px;
+		color:grey;
+	}
+	
+	.card-btn{
+		display: inline-block;
+		background-color: blue;
+		color: white;
+		padding: 10px 20px;
+		border-radius: 15px;
+		margin-top:10px;
+		text-docoration: none;
+		margin: 10px;
+	}
+
+	.card-btn: hover{
+		background-color: #0056b3;
+	}
+	
+	body{
+	list-style:none;
+	display:flex;
+	gap:25px;
+	margin-right:end;
+	justify-content: center;
+	}
+	
+	.navbar{
+  position:flex;
+  top:0;
+  width:100%;
+  height:60px;
+  background:#181e51;
+  color:white;
+  display:flex;
+  align-items:center;
+  padding:0 25px;
+  box-sizing:border-box;
+  z-index:1000;
+  justify-content: center;
+  }
+  
+  .nav-links{
+  list-style:none;
+  display:flex;
+  gap:25px;
+  margin-right:end;
+  }
+  
+  .nav-links li a{
+  text-decoration: none;
+  font-size: 16px;
+  transition:0.3s;
+  }
+  
+   .nav{
+  background-color:white;
+  color: #00000;
+  padding:10px 20px;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:5px;
+  }
+  .nav:hover{
+	  background-color:#38374d;
+	  color:white;
+  }
+</style>
+</head>
+<body>
+
+	<nav class="navbar">
+  <div class="logo"><a href="#">
+  B
+  </a></div>
+	<ul class="nav-links">
+	 <li><a class="nav" href="#">Beranda</a></li>
+	 <li><a  class="nav" href="PROFILE.html">Profil</a></li>
+	 <li><a  class="nav" href="#">Kontak</a></li>
+	 <li><a  class="nav" href="GUESTpage.html">Buku Tamu</a></li>
+	</ul>
+</nav>
+
+	<center>
+	<div class="card">
+	  <img src="assets/img/Jordan.png" class="card-img">
+	  <h3 class="card-tittle">Fathir</h3>
+	  <p class="card-subtittle">UI/UX Designer</p>
+	  <button class="card-btn">
+		Lihat Profile
+	  </button>
+	</div>
+	
+	<div class="card">
+	  <img src="assets/img/Jordan.png" class="card-img">
+	  <h3 class="card-tittle">Fathir</h3>
+	  <p class="card-subtittle">UI/UX Designer</p>
+	  <button class="card-btn">
+		Lihat Profile
+	  </button>
+	</div>
+	
+	<div class="card">
+	  <img src="assets/img/Jordan.png" class="card-img">
+	  <h3 class="card-tittle">Fathir</h3>
+	  <p class="card-subtittle">UI/UX Designer</p>
+	  <button class="card-btn">
+		Lihat Profile
+	  </button>
+	</div>
+	</center>
+</body>
+</html>
